@@ -5,12 +5,14 @@
  */
 package com.srm.main;
 
+import com.srm.view.MainJFrame;
+
 /**
  *
  * @author HP
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hello");
+        new MainJFrame().setVisible(true);
     }
 }
