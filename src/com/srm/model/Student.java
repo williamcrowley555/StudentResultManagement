@@ -75,4 +75,6 @@ public class Student extends AbstractModel {
     public void setTrang_thai(boolean trang_thai) {
         this.trang_thai = trang_thai;
     }
+
+    
 }

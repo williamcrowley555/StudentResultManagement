@@ -5,6 +5,8 @@
  */
 package com.srm.view;
 
+import com.srm.controller.StudentController;
+
 /**
  *
  * @author HP
@@ -16,6 +18,8 @@ public class StudentJPanel extends javax.swing.JPanel {
      */
     public StudentJPanel() {
         initComponents();
+        StudentController controller = new StudentController(jpnView, btnAdd, jtfSearch);
+        controller.setDataToTable();
     }
 
     /**
