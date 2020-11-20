@@ -36,10 +36,9 @@ public class StudentJPanel extends javax.swing.JPanel {
         jtfSearch = new javax.swing.JTextField();
         jpnView = new javax.swing.JPanel();
 
-        jpnRoot.setBackground(new java.awt.Color(255, 255, 0));
-
         btnAdd.setBackground(new java.awt.Color(0, 255, 0));
         btnAdd.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnAdd.setForeground(new java.awt.Color(255, 255, 255));
         btnAdd.setText("+ Thêm mới");
         btnAdd.setBorder(null);
 

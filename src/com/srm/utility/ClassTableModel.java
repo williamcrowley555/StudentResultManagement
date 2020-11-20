@@ -20,6 +20,13 @@ public class ClassTableModel {
             public boolean isCellEditable(int row, int column) {
                 return false;
             }
+
+            @Override
+            public Class<?> getColumnClass(int columnIndex) {
+                return columnIndex == 7 ? Boolean.class : String.class;
+            }
+            
+            
         };
         dtm.setColumnIdentifiers(listColumn);
         int columns = listColumn.length;
@@ -33,7 +40,7 @@ public class ClassTableModel {
                 obj[1] = i + 1;
                 obj[2] = student.getHo_ten();
                 obj[3] = student.getNgay_sinh();
-                obj[4] = student.isGioi_tinh();
+                obj[4] = student.isGioi_tinh() == true ? "Nam" : "Nữ";
                 obj[5] = student.getSo_dien_thoai();
                 obj[6] = student.getDia_chi();
                 obj[7] = student.isTrang_thai();

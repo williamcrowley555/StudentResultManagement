@@ -5,18 +5,18 @@
  */
 package com.srm.model;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  *
  * @author HP
  */
-public class Student extends AbstractModel {
+public class Student {
     private long ma_sinh_vien;
     private String ho_ten;
     private String so_dien_thoai;
     private String dia_chi;
-    private Timestamp ngay_sinh;
+    private Date ngay_sinh;
     private boolean gioi_tinh;
     private boolean trang_thai;
 
@@ -52,11 +52,11 @@ public class Student extends AbstractModel {
         this.dia_chi = dia_chi;
     }
 
-    public Timestamp getNgay_sinh() {
+    public Date getNgay_sinh() {
         return ngay_sinh;
     }
 
-    public void setNgay_sinh(Timestamp ngay_sinh) {
+    public void setNgay_sinh(Date ngay_sinh) {
         this.ngay_sinh = ngay_sinh;
     }
 
